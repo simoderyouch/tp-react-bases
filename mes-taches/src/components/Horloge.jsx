@@ -7,13 +7,14 @@ function Horloge() {
     // À compléter :
     // 1. démarrer un setInterval qui met à jour « maintenant » toutes les 1000 ms
 
-     const mInterval =  setInterval(() => {
+     const mInterval = setInterval(() => {
 
             setMaintenant(() => new Date());
         }, 1000);
-    // 2. retourner une fonction de nettoyage qui appelle clearInterval
-     
-        clearInterval(mInterval);
+    return () => {
+      clearInterval(mInterval);
+      console.log('Nettoyage de l’horloge');
+    }
   }, [])
 
   return <p className="horloge">{maintenant.toLocaleTimeString('fr-FR')}</p>

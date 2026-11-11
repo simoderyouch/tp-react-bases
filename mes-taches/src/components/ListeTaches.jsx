@@ -1,6 +1,6 @@
 import Tache from "./Tache.jsx"
 
-function ListeTaches({taches,onBasculer , onSupprimer}) {
+function ListeTaches({ taches, onBasculer, onSupprimer, onModifier }) {
 
     return ( <ul className="liste-taches">
       
@@ -13,6 +13,7 @@ function ListeTaches({taches,onBasculer , onSupprimer}) {
   terminee={tache.terminee}
   onBasculer={onBasculer}
   onSupprimer={onSupprimer}
+  onModifier={onModifier}
 />
 
 ))  : <p className="vide">Aucune tâche à afficher.</p> }
