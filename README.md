@@ -545,18 +545,18 @@ Votre code est hébergé sur **GitHub**, et vous remettez **le lien de votre dé
 
 ### Vérifications avant la remise
 
-- [ ] Le dépôt `tp-react-taches` est **public** sur votre compte.
-- [ ] Il contient **au moins 6 commits**, de « Étape 0 » à « Étape 5 », avec les messages indiqués.
-- [ ] Le dossier `node_modules/` **n'est pas** sur GitHub.
-- [ ] Le projet démarre après un clonage :
+- [x] Le dépôt `tp-react-taches` est **public** sur votre compte.
+- [x] Il contient **au moins 6 commits**, de « Étape 0 » à « Étape 5 », avec les messages indiqués.
+- [x] Le dossier `node_modules/` **n'est pas** sur GitHub.
+- [x] Le projet démarre après un clonage :
   ```bash
   git clone https://github.com/VOTRE-COMPTE/tp-react-taches.git
   cd tp-react-taches/mes-taches
   npm install
   npm run dev
   ```
-- [ ] `npm run lint` ne signale aucune erreur.
-- [ ] Votre nom apparaît dans le pied de page.
+- [x] `npm run lint` ne signale aucune erreur.
+- [x] Votre nom apparaît dans le pied de page.
 
 ### Remettre le lien dans Google Classroom
 
