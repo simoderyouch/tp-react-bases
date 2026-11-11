@@ -1,23 +1,12 @@
-function ListeTaches() {
+import Tache from "./Tache.jsx"
+
+function ListeTaches({taches}) {
 
     return ( <ul className="liste-taches">
-      <li className="tache">
-        <span className="titre">
-          Comprendre les composants
-        </span>
-      </li>
-
-      <li className="tache terminee">
-        <span className="titre">
-          Apprendre JSX
-        </span>
-      </li>
-
-      <li className="tache">
-        <span className="titre">
-          Créer une application React
-        </span>
-      </li>
+      
+         {taches.lenght > 0 ? taches.map((tache) => (
+  <Tache key={tache.id} titre={tache.titre} terminee={tache.terminee} />
+))  : <p className="vide">Aucune tâche à afficher.</p> }
     </ul>  )
 
 }
